@@ -1,4 +1,76 @@
-<html>
-  <h1>ยินดีต้อนรับสู่โลกของ DevOps</h1>
-<p>ว้าว เกิดไรขึ้นวะ</p>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Web Demo | Stylish</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+        font-family: "Segoe UI", sans-serif;
+        animation: bgMove 10s infinite alternate ease-in-out;
+    }
+
+    @keyframes bgMove {
+        0% { filter: hue-rotate(0deg); }
+        100% { filter: hue-rotate(80deg); }
+    }
+
+    .card {
+        width: 340px;
+        padding: 24px;
+        border-radius: 20px;
+        backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+        text-align: center;
+        color: white;
+        transform: translateY(0);
+        transition: transform .4s ease, box-shadow .4s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 55px rgba(0,0,0,0.5);
+    }
+
+    .btn {
+        margin-top: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        background: white;
+        color: #222;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        background: #ffe15f;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>✨ Welcome ✨</h2>
+    <p>เว็บนี้ถูกสร้างเพื่อโชว์ความ “มีชั้นเชิง” เบา ๆ</p>
+    <button class="btn" onclick="sayHi()">คลิกเพื่อทักทาย</button>
+</div>
+
+<script>
+    function sayHi() {
+        alert("สวัสดี! มาดูโค้ดเพิ่มก็บอกได้เลย 😄");
+    }
+</script>
+
+</body>
 </html>
