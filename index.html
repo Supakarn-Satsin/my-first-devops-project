@@ -1,76 +1,106 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<title>Web Demo | Stylish</title>
+    <meta charset="UTF-8">
+    <title>My Profile - Chonthicha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-        font-family: "Segoe UI", sans-serif;
-        animation: bgMove 10s infinite alternate ease-in-out;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
 
-    @keyframes bgMove {
-        0% { filter: hue-rotate(0deg); }
-        100% { filter: hue-rotate(80deg); }
-    }
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .card {
-        width: 340px;
-        padding: 24px;
-        border-radius: 20px;
-        backdrop-filter: blur(14px);
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-        text-align: center;
-        color: white;
-        transform: translateY(0);
-        transition: transform .4s ease, box-shadow .4s ease;
-    }
+        .card {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: 0.3s;
+        }
 
-    .card:hover {
-        transform: translateY(-12px);
-        box-shadow: 0 20px 55px rgba(0,0,0,0.5);
-    }
+        .card:hover {
+            transform: translateY(-10px);
+        }
 
-    .btn {
-        margin-top: 18px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 12px;
-        font-size: 16px;
-        cursor: pointer;
-        background: white;
-        color: #222;
-        transition: 0.3s;
-    }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #4e73df;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
 
-    .btn:hover {
-        transform: scale(1.05);
-        background: #ffe15f;
-    }
-</style>
+        h1 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4e73df;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2e59d9;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
-    <h2>✨ Welcome ✨</h2>
-    <p>เว็บนี้ถูกสร้างเพื่อโชว์ความ “มีชั้นเชิง” เบา ๆ</p>
-    <button class="btn" onclick="sayHi()">คลิกเพื่อทักทาย</button>
-</div>
+    <div class="card">
+        <div class="profile-img">
+            CL
+        </div>
 
-<script>
-    function sayHi() {
-        alert("สวัสดี! มาดูโค้ดเพิ่มก็บอกได้เลย 😄");
-    }
-</script>
+        <h1>Chonthicha Lhasom</h1>
+        <div class="info">
+            IT.4/1 <br>
+            รหัสนักศึกษา: 68319010005
+        </div>
+
+        <a href="#" class="btn">Contact Me</a>
+
+        <footer>
+            © 2026 Chonthicha Lhasom
+        </footer>
+    </div>
 
 </body>
 </html>
